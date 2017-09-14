@@ -9,7 +9,7 @@ ipsv6=""
 for ip in $ipsv4
 do
   echo -n "$ip "
-  ufw allow from $ip to any port 80 proto tcp
+  ufw allow from $ip to any port 22 proto tcp
   ufw allow from $ip to any port 40365 proto tcp
 done
 
